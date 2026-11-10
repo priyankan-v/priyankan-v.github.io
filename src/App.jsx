@@ -27,6 +27,7 @@ import {
   categories,
   projects,
   profile,
+  resumeRequestUrl,
   skillGroups,
   education,
   experience,
@@ -181,6 +182,14 @@ function App() {
                 {label}
               </a>
             ))}
+            <a
+              className="resume-link"
+              href={resumeRequestUrl}
+              title="Request resume by email"
+              onClick={() => setMenuOpen(false)}
+            >
+              Resume <Mail size={14} />
+            </a>
           </nav>
           <div className="header-actions">
             <button
@@ -636,10 +645,7 @@ function App() {
               }
               description="Graduate and undergraduate engineering education."
             >
-              <a
-                className="text-link"
-                href={`mailto:${profile.email}?subject=Resume%20request`}
-              >
+              <a className="text-link" href={resumeRequestUrl}>
                 Request résumé <ArrowUpRight size={16} />
               </a>
             </SectionHeading>
@@ -721,6 +727,22 @@ function App() {
                       ? 'Copy the email address manually.'
                       : ''}
                 </span>
+              </div>
+              <div className="resume-request">
+                <h3>Resume</h3>
+                <p>
+                  My resume is available on request. Email me with your name,
+                  organization, and reason for requesting access. I review each
+                  request before sharing a copy.
+                </p>
+                <a className="text-link" href={resumeRequestUrl}>
+                  <Mail size={17} /> Request resume by email{' '}
+                  <ArrowUpRight size={16} />
+                </a>
+                <p className="resume-request-note">
+                  Opens a prefilled request in your email app. Send it to submit
+                  your request.
+                </p>
               </div>
             </div>
             <div className="contact-decoration" aria-hidden="true">

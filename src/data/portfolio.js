@@ -4,6 +4,21 @@ export const profile = {
   github: 'https://github.com/priyankan-v',
   linkedin: 'https://lk.linkedin.com/in/priyankan-vettivel',
 }
+
+export const resumeRequestUrl = `mailto:${profile.email}?subject=${encodeURIComponent('Resume access request')}&body=${encodeURIComponent(
+  [
+    'Hello Priyankan,',
+    '',
+    'I would like to request access to your resume.',
+    '',
+    'Name:',
+    'Organization:',
+    'Reason for requesting your resume:',
+    '',
+    'Thank you.',
+  ].join('\r\n'),
+)}`
+
 export const categories = [
   'All projects',
   'Robotics',

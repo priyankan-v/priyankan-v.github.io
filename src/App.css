@@ -70,6 +70,12 @@
   border-radius: 50%;
   background: var(--accent);
 }
+.navigation .resume-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--accent);
+}
 .header-actions {
   display: flex;
   gap: 9px;
@@ -952,6 +958,32 @@ h2 {
 .copy-status {
   font-size: 11px;
   color: var(--accent);
+}
+.resume-request {
+  max-width: 440px;
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.resume-request h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.resume-request > p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.resume-request > .text-link {
+  margin-top: 17px;
+  color: var(--accent);
+  white-space: normal;
+}
+.resume-request > .resume-request-note {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--faint);
 }
 .contact-decoration {
   font-family: var(--heading);

@@ -2,7 +2,7 @@ export const profile = {
   name: 'Priyankan Vettivel',
   email: 'priyankanvettivel@gmail.com',
   github: 'https://github.com/priyankan-v',
-  linkedin: 'https://lk.linkedin.com/in/priyankan-vettivel',
+  linkedin: 'https://linkedin.com/in/priyankan-vettivel',
 }
 
 export const resumeRequestUrl = `mailto:${profile.email}?subject=${encodeURIComponent('Resume access request')}&body=${encodeURIComponent(
